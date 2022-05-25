@@ -12,6 +12,6 @@ namespace Application.Interfaces
     {
         Task<List<UserDto>> getAllUser();
         Task<UserDto> GetUserByID(int Id);
-        UserDto DeleteUser(int Id);
+        Task<UserDto> DeleteUser(int id);
     }
 }

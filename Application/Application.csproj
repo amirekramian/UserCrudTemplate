@@ -1,9 +1,24 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Service\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Api\Api.csproj" />
+    <ProjectReference Include="..\Core\Core.csproj" />
+    <ProjectReference Include="..\Infrastrudture\Infrastrudture.csproj" />
+  </ItemGroup>
 
 </Project>

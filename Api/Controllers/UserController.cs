@@ -1,5 +1,7 @@
 ﻿using Application.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using Application.Interfaces;
+using Infrastrudture.Dto;
 
 namespace Api.Controllers
 {
@@ -13,5 +15,33 @@ namespace Api.Controllers
         {
             this.userService = userService;
         }
+
+        [HttpGet("{Id}")]
+        public async Task<IActionResult> GetById(int ID)
+        {
+            var result = await userService.GetUserByID(ID); 
+            return Ok(result);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAllUser()
+        {
+            var result = await userService.getAllUser();
+            return Ok(result);  
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> AddUser(UserDto Model)
+        {
+            var result = await userService.AddUser(Model);
+            return Ok(result);
+        }
+
+
+        //public async Task<IActionResult> RemoveUser(int ID)
+        //{
+        //    var result = await userService.DeleteUser(ID);
+        //    return Ok(result);
+        //}
     }
 }

@@ -19,6 +19,23 @@ namespace Application.Service
             this.dbcontext = dbcontext;
         }
 
+        public async Task<UserDto> AddUser(UserDto model)
+        {
+            var User = new Core.User
+            {
+                Name = model.Name,
+                FamilyName = model.FamilyName,
+                UserName = model.UserName,
+                Tel = model.Tel,
+                nationalCode = model.NationalCode,
+                BirthDate = model.BirthDate,
+            };
+            dbcontext.Users.AddAsync(User);
+            dbcontext.SaveChangesAsync();
+
+            model.Id = User.ID;
+            return model;
+        }
 
         public async Task<UserDto> DeleteUser(int id)
         {
@@ -64,5 +81,9 @@ namespace Application.Service
             };
             return model;
         }
+
+      
+
+        
     }
 }

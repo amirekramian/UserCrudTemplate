@@ -18,7 +18,7 @@ namespace Api.Controllers
         [HttpGet("{Id:int}")]
         public async Task<IActionResult> GetById(int ID)
         {
-            var result = await userService.GetUserByID(ID); 
+            var result = await userService.GetUserByID(ID);
             return Ok(result);
         }
 
@@ -26,7 +26,7 @@ namespace Api.Controllers
         public async Task<IActionResult> GetAllUser()
         {
             var result = await userService.getAllUser();
-            return Ok(result);  
+            return Ok(result);
         }
 
         [HttpPost]
@@ -40,6 +40,12 @@ namespace Api.Controllers
         public async Task<IActionResult> RemoveUser(int ID)
         {
             var result = await userService.DeleteUser(ID);
+            return Ok(result);
+        }
+        [HttpPut]
+        public async Task<IActionResult> UpdatUser(int ID)
+        {
+            var result = await userService.UpdateUser(ID);
             return Ok(result);
         }
     }

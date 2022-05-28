@@ -3,6 +3,7 @@ using Infrastrudture.Dto;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -66,24 +67,39 @@ namespace Application.Service
 
         public async Task<UserDto> GetUserByID(int Id)
         {
-         var TargetUser = await dbcontext.Users.FindAsync(Id);
+           var user = await dbcontext.Users.FindAsync(Id);
             var model = new UserDto
             {
-
-                Name = TargetUser.Name,
-                FamilyName = TargetUser.FamilyName,
-                Tel = TargetUser.Tel,
-                NationalCode = TargetUser.nationalCode,
-                BirthDate = TargetUser.BirthDate,
-                FullName = TargetUser.Name + " " + TargetUser.FamilyName,
-                UserName = TargetUser.UserName,
-
+                Id = user.ID,
+                Name = user.Name,
+                FamilyName = user.FamilyName,
+                UserName = user.UserName,
+                BirthDate = user.BirthDate,
+                NationalCode = user.nationalCode,
+                Tel = user.Tel,
+                FullName = user.Name + " " + user.FamilyName,
             };
             return model;
+            
         }
 
-      
-
-        
+        public async Task<UserDto> UpdateUser(int ID)
+        {
+            var targetUser = await dbcontext.Users.FindAsync(ID);
+            var Model = new UserDto
+            {
+                Name = targetUser.Name,
+                FamilyName = targetUser.FamilyName,
+                Tel = targetUser.Tel,
+                NationalCode = targetUser.nationalCode,
+                BirthDate = targetUser.BirthDate,
+                FullName = targetUser.Name + " " + targetUser.FamilyName,
+                UserName = targetUser.UserName,
+            };
+            dbcontext.Users.Update(targetUser);
+            dbcontext.SaveChanges();
+            Model.Id = targetUser.ID;
+            return Model;
+        }
     }
 }

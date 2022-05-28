@@ -14,5 +14,6 @@ namespace Application.Interfaces
         Task<UserDto> GetUserByID(int Id);
         Task<UserDto> DeleteUser(int id);
         Task<UserDto> AddUser(UserDto user);
+        Task<UserDto> UpdateUser(int ID);
     }
 }

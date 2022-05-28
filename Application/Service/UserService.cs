@@ -40,7 +40,7 @@ namespace Application.Service
         public async Task<UserDto> DeleteUser(int id)
         {
 
-            var TargetUser = dbcontext.Users.FirstOrDefaultAsync(User => User.ID == id);
+            var TargetUser = dbcontext.Users.FindAsync(id);
             dbcontext.Users.Remove(await TargetUser);
             await dbcontext.SaveChangesAsync(); 
             return new UserDto();

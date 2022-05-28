@@ -1,6 +1,5 @@
 ﻿using Application.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-using Application.Interfaces;
 using Infrastrudture.Dto;
 
 namespace Api.Controllers
@@ -16,7 +15,7 @@ namespace Api.Controllers
             this.userService = userService;
         }
 
-        [HttpGet("{Id}")]
+        [HttpGet("{Id:int}")]
         public async Task<IActionResult> GetById(int ID)
         {
             var result = await userService.GetUserByID(ID); 
@@ -37,11 +36,11 @@ namespace Api.Controllers
             return Ok(result);
         }
 
-
-        //public async Task<IActionResult> RemoveUser(int ID)
-        //{
-        //    var result = await userService.DeleteUser(ID);
-        //    return Ok(result);
-        //}
+        [HttpDelete]
+        public async Task<IActionResult> RemoveUser(int ID)
+        {
+            var result = await userService.DeleteUser(ID);
+            return Ok(result);
+        }
     }
 }

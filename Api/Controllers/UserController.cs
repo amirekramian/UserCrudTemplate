@@ -15,7 +15,7 @@ namespace Api.Controllers
             this.userService = userService;
         }
 
-        [HttpGet("{Id:int}")]
+        [HttpGet("{ID}")]
         public async Task<IActionResult> GetById(int ID)
         {
             var result = await userService.GetUserByID(ID);
@@ -43,9 +43,9 @@ namespace Api.Controllers
             return Ok(result);
         }
         [HttpPut]
-        public async Task<IActionResult> UpdatUser(int ID)
+        public async Task<IActionResult> UpdatUser(UserDto Model)
         {
-            var result = await userService.UpdateUser(ID);
+            var result = await userService.UpdateUser(Model);
             return Ok(result);
         }
     }

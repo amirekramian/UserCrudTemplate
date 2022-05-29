@@ -7,6 +7,8 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace Application.Service
 {
@@ -83,23 +85,22 @@ namespace Application.Service
             
         }
 
-        public async Task<UserDto> UpdateUser(int ID)
+        public async Task<UserDto> UpdateUser(UserDto user)
         {
-            var targetUser = await dbcontext.Users.FindAsync(ID);
-            var Model = new UserDto
+            var temp = new UserDto
             {
-                Name = targetUser.Name,
-                FamilyName = targetUser.FamilyName,
-                Tel = targetUser.Tel,
-                NationalCode = targetUser.nationalCode,
-                BirthDate = targetUser.BirthDate,
-                FullName = targetUser.Name + " " + targetUser.FamilyName,
-                UserName = targetUser.UserName,
+                Name = user.Name,
+                FamilyName = user.FamilyName,
+                Tel = user.Tel,
+                NationalCode = user.NationalCode,
+                UserName = user.UserName,
+                BirthDate = user.BirthDate,
+                FullName = user.FullName,
             };
-            dbcontext.Users.Update(targetUser);
-            dbcontext.SaveChanges();
-            Model.Id = targetUser.ID;
-            return Model;
+            var targetuser = await dbcontext.Users.FindAsync(user.Id);
+            dbcontext.Entry(targetuser).CurrentValues.SetValues(temp);
+            dbcontext.SaveChangesAsync();
+            return temp;
         }
     }
 }

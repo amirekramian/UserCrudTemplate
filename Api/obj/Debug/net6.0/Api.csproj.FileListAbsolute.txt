@@ -81,3 +81,4 @@ D:\.net samples\UserApi\UserCrudTemplate\Api\bin\Debug\net6.0\Nlog.config
 D:\.net samples\UserApi\UserCrudTemplate\Api\bin\Debug\net6.0\NLog.dll
 D:\.net samples\UserApi\UserCrudTemplate\Api\bin\Debug\net6.0\NLog.Extensions.Logging.dll
 D:\.net samples\UserApi\UserCrudTemplate\Api\bin\Debug\net6.0\NLog.Web.AspNetCore.dll
+D:\.net samples\UserApi\UserCrudTemplate\Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.Annotations.dll

@@ -44,9 +44,14 @@ namespace Application.Service
         {
 
             var TargetUser = dbcontext.Users.FindAsync(id);
-            dbcontext.Users.Remove(await TargetUser);
-            await dbcontext.SaveChangesAsync(); 
-            return new UserDto();
+            if (TargetUser != null)
+            {
+                dbcontext.Users.Remove(await TargetUser);
+                await dbcontext.SaveChangesAsync();
+                return new UserDto();
+            }
+            return null;
+            
             
         }
 
@@ -70,18 +75,23 @@ namespace Application.Service
         public async Task<UserDto> GetUserByID(int Id)
         {
            var user = await dbcontext.Users.FindAsync(Id);
-            var model = new UserDto
+            if(user != null)
             {
-                Id = user.ID,
-                Name = user.Name,
-                FamilyName = user.FamilyName,
-                UserName = user.UserName,
-                BirthDate = user.BirthDate,
-                NationalCode = user.nationalCode,
-                Tel = user.Tel,
-                FullName = user.Name + " " + user.FamilyName,
-            };
-            return model;
+                var model = new UserDto
+                {
+                    Id = user.ID,
+                    Name = user.Name,
+                    FamilyName = user.FamilyName,
+                    UserName = user.UserName,
+                    BirthDate = user.BirthDate,
+                    NationalCode = user.nationalCode,
+                    Tel = user.Tel,
+                    FullName = user.Name + " " + user.FamilyName,
+                };
+                return model;
+            }
+            return null;
+            
             
         }
 
@@ -98,9 +108,13 @@ namespace Application.Service
                 FullName = user.FullName,
             };
             var targetuser = await dbcontext.Users.FindAsync(user.Id);
-            dbcontext.Entry(targetuser).CurrentValues.SetValues(temp);
-            dbcontext.SaveChangesAsync();
-            return temp;
+            if(targetuser != null)
+            {
+                dbcontext.Entry(targetuser).CurrentValues.SetValues(temp);
+                dbcontext.SaveChangesAsync();
+                return temp;
+            }
+            return null;
         }
     }
 }

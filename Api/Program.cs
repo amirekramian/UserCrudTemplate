@@ -1,9 +1,37 @@
-using Core;
+﻿using Core;
 using Application.Interfaces;
 using Application.Service;
 using Microsoft.EntityFrameworkCore;
+using NLog.Web;
+using NLog;
+using LogLevel = Microsoft.Extensions.Logging.LogLevel;
+using Microsoft.AspNetCore;
 
+var logger = NLogBuilder.ConfigureNLog("Nlog.config").GetCurrentClassLogger();
 
+try
+{
+    logger.Debug("Init main");
+    CreateWebHostBuilder(args).Build().Run();
+}
+catch (Exception e)
+{
+    logger.Error(e, "Program stopped because of an exception.");
+    
+}
+finally
+{
+    LogManager.Shutdown();
+}
+    
+
+     static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
+        WebHost.CreateDefaultBuilder(args)
+            .UseStartup<Program>()
+            .ConfigureLogging(builder =>
+            {
+                
+            }).UseNLog();
 
 var builder = WebApplication.CreateBuilder(args);
 

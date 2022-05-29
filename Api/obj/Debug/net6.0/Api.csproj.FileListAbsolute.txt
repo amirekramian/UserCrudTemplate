@@ -77,3 +77,7 @@ D:\.net samples\UserApi\UserCrudTemplate\Api\bin\Debug\net6.0\runtimes\win-x86\n
 D:\.net samples\UserApi\UserCrudTemplate\Api\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 D:\.net samples\UserApi\UserCrudTemplate\Api\bin\Debug\net6.0\Humanizer.dll
 D:\.net samples\UserApi\UserCrudTemplate\Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\.net samples\UserApi\UserCrudTemplate\Api\bin\Debug\net6.0\Nlog.config
+D:\.net samples\UserApi\UserCrudTemplate\Api\bin\Debug\net6.0\NLog.dll
+D:\.net samples\UserApi\UserCrudTemplate\Api\bin\Debug\net6.0\NLog.Extensions.Logging.dll
+D:\.net samples\UserApi\UserCrudTemplate\Api\bin\Debug\net6.0\NLog.Web.AspNetCore.dll

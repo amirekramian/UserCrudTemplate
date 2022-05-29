@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6yaaXPDtU0eXnjnK/1RKBS5d2aMz/M63t2mgSVoe3xDGs5AIyw9cWwDreKwdwuiKMViwSNhn7mB8vrJZt1BQug==",
+  "dgSpecHash": "j1HwN7+umF2qsFt2x+6ZCNN/eyRGcAEt06khPAGto8DUyiYX/DwQNM02SRs6RhaQk/rHwxnm4eluFjU88J9L5w==",
   "success": true,
   "projectFilePath": "D:\\.net samples\\UserApi\\UserCrudTemplate\\Infrastrudture\\Infrastrudture.csproj",
   "expectedPackageFiles": [
@@ -34,6 +34,7 @@
     "C:\\Users\\amir\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\amir\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\amir\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\amir\\.nuget\\packages\\nlog\\5.0.0\\nlog.5.0.0.nupkg.sha512",
     "C:\\Users\\amir\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
     "C:\\Users\\amir\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\amir\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",

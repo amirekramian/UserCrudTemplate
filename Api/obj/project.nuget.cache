@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Irm+4hHrMmghO5qJx1jMpITHrNyBgSHMyiEzguBlctW0xPT6TTVWeFgbtoxsvuza8/78fAesm4Vjon3nvfuQBQ==",
+  "dgSpecHash": "4ZBt6AaSihZJY/7F2UcM8+oSPxWDeSbjiSMi38Z+iCH/NPDtDnwRQLewN/AyUMz5Bu1dSXHATtHXFvB45QnI4w==",
   "success": true,
   "projectFilePath": "D:\\.net samples\\UserApi\\UserCrudTemplate\\Api\\Api.csproj",
   "expectedPackageFiles": [
@@ -60,6 +60,9 @@
     "C:\\Users\\amir\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\amir\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\amir\\.nuget\\packages\\newtonsoft.json\\9.0.1\\newtonsoft.json.9.0.1.nupkg.sha512",
+    "C:\\Users\\amir\\.nuget\\packages\\nlog\\5.0.0\\nlog.5.0.0.nupkg.sha512",
+    "C:\\Users\\amir\\.nuget\\packages\\nlog.extensions.logging\\5.0.0\\nlog.extensions.logging.5.0.0.nupkg.sha512",
+    "C:\\Users\\amir\\.nuget\\packages\\nlog.web.aspnetcore\\5.0.0\\nlog.web.aspnetcore.5.0.0.nupkg.sha512",
     "C:\\Users\\amir\\.nuget\\packages\\runtime.native.system\\4.0.0\\runtime.native.system.4.0.0.nupkg.sha512",
     "C:\\Users\\amir\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
     "C:\\Users\\amir\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",

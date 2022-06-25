@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Core.FluentApiConfiguration;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,10 +10,15 @@ namespace Core
 {
     public class UserCrudTemplateEntity : DbContext
     {
-        public UserCrudTemplateEntity(DbContextOptions options):base(options)
+        public UserCrudTemplateEntity(DbContextOptions options) : base(options)
         {
 
         }
         public DbSet<User> Users => Set<User>();
+
+        //protected override void OnModelCreating(ModelBuilder modelBuilder)
+        //{
+        //    modelBuilder.ApplyConfiguration(new UserEntityConfiguration());
+        //}
     }
 }

@@ -52,7 +52,7 @@ namespace Api.Controllers
             return Ok(result);
         }
 
-        [HttpDelete]
+        [HttpDelete("{ID}")]
         [SwaggerOperation(
             Summary = "remove a User",
             Description = "remove a user by ID",

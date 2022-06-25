@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "MjGk/kFDlavfsocSNa3JW7A/kxnCpKed919UM68lpPrRTSg74E/qzavUhfEdkK9xpsxtzsbI3WWs4HcBC374SA==",
+  "dgSpecHash": "bHXHLQKdeoguVCW/eqXOE87rFOZ434ilf/TjRBjIyTKZyDoGM2iD5WcXL0yrrg6ktNTA90OLuP0KuwiTjXINcg==",
   "success": true,
-  "projectFilePath": "D:\\.net samples\\UserApi\\UserCrudTemplate\\Core\\Core.csproj",
+  "projectFilePath": "H:\\file\\.net samples\\UserApi\\UserCrudTemplate\\Core\\Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\amir\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
+    "C:\\Users\\amir\\.nuget\\packages\\fluentassertions\\6.7.0\\fluentassertions.6.7.0.nupkg.sha512",
     "C:\\Users\\amir\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\amir\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\amir\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

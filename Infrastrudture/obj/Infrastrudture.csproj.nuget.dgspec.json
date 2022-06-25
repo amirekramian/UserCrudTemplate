@@ -1,25 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "D:\\.net samples\\UserApi\\UserCrudTemplate\\Infrastrudture\\Infrastrudture.csproj": {}
+    "H:\\file\\.net samples\\UserApi\\UserCrudTemplate\\Infrastrudture\\Infrastrudture.csproj": {}
   },
   "projects": {
-    "D:\\.net samples\\UserApi\\UserCrudTemplate\\Core\\Core.csproj": {
+    "H:\\file\\.net samples\\UserApi\\UserCrudTemplate\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\.net samples\\UserApi\\UserCrudTemplate\\Core\\Core.csproj",
+        "projectUniqueName": "H:\\file\\.net samples\\UserApi\\UserCrudTemplate\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "D:\\.net samples\\UserApi\\UserCrudTemplate\\Core\\Core.csproj",
+        "projectPath": "H:\\file\\.net samples\\UserApi\\UserCrudTemplate\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\amir\\.nuget\\packages\\",
-        "outputPath": "D:\\.net samples\\UserApi\\UserCrudTemplate\\Core\\obj\\",
+        "outputPath": "H:\\file\\.net samples\\UserApi\\UserCrudTemplate\\Core\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Progress\\ToolboxNuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\amir\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Telerik UI for WPF.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -47,6 +43,10 @@
             "EntityFramework": {
               "target": "Package",
               "version": "[6.4.4, )"
+            },
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[6.7.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -88,26 +88,22 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\.net samples\\UserApi\\UserCrudTemplate\\Infrastrudture\\Infrastrudture.csproj": {
+    "H:\\file\\.net samples\\UserApi\\UserCrudTemplate\\Infrastrudture\\Infrastrudture.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\.net samples\\UserApi\\UserCrudTemplate\\Infrastrudture\\Infrastrudture.csproj",
+        "projectUniqueName": "H:\\file\\.net samples\\UserApi\\UserCrudTemplate\\Infrastrudture\\Infrastrudture.csproj",
         "projectName": "Infrastrudture",
-        "projectPath": "D:\\.net samples\\UserApi\\UserCrudTemplate\\Infrastrudture\\Infrastrudture.csproj",
+        "projectPath": "H:\\file\\.net samples\\UserApi\\UserCrudTemplate\\Infrastrudture\\Infrastrudture.csproj",
         "packagesPath": "C:\\Users\\amir\\.nuget\\packages\\",
-        "outputPath": "D:\\.net samples\\UserApi\\UserCrudTemplate\\Infrastrudture\\obj\\",
+        "outputPath": "H:\\file\\.net samples\\UserApi\\UserCrudTemplate\\Infrastrudture\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Progress\\ToolboxNuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\amir\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Telerik UI for WPF.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -120,8 +116,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\.net samples\\UserApi\\UserCrudTemplate\\Core\\Core.csproj": {
-                "projectPath": "D:\\.net samples\\UserApi\\UserCrudTemplate\\Core\\Core.csproj"
+              "H:\\file\\.net samples\\UserApi\\UserCrudTemplate\\Core\\Core.csproj": {
+                "projectPath": "H:\\file\\.net samples\\UserApi\\UserCrudTemplate\\Core\\Core.csproj"
               }
             }
           }
@@ -184,7 +180,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

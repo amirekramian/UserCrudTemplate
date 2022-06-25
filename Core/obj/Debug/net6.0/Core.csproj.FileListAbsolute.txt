@@ -12,3 +12,17 @@ D:\.net samples\UserApi\UserCrudTemplate\Core\obj\Debug\net6.0\refint\Core.dll
 D:\.net samples\UserApi\UserCrudTemplate\Core\obj\Debug\net6.0\Core.pdb
 D:\.net samples\UserApi\UserCrudTemplate\Core\obj\Debug\net6.0\Core.genruntimeconfig.cache
 D:\.net samples\UserApi\UserCrudTemplate\Core\obj\Debug\net6.0\ref\Core.dll
+H:\file\.net samples\UserApi\UserCrudTemplate\Core\bin\Debug\net6.0\Core.deps.json
+H:\file\.net samples\UserApi\UserCrudTemplate\Core\bin\Debug\net6.0\Core.runtimeconfig.json
+H:\file\.net samples\UserApi\UserCrudTemplate\Core\bin\Debug\net6.0\Core.dll
+H:\file\.net samples\UserApi\UserCrudTemplate\Core\bin\Debug\net6.0\Core.pdb
+H:\file\.net samples\UserApi\UserCrudTemplate\Core\obj\Debug\net6.0\Core.csproj.AssemblyReference.cache
+H:\file\.net samples\UserApi\UserCrudTemplate\Core\obj\Debug\net6.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+H:\file\.net samples\UserApi\UserCrudTemplate\Core\obj\Debug\net6.0\Core.AssemblyInfoInputs.cache
+H:\file\.net samples\UserApi\UserCrudTemplate\Core\obj\Debug\net6.0\Core.AssemblyInfo.cs
+H:\file\.net samples\UserApi\UserCrudTemplate\Core\obj\Debug\net6.0\Core.csproj.CoreCompileInputs.cache
+H:\file\.net samples\UserApi\UserCrudTemplate\Core\obj\Debug\net6.0\Core.dll
+H:\file\.net samples\UserApi\UserCrudTemplate\Core\obj\Debug\net6.0\refint\Core.dll
+H:\file\.net samples\UserApi\UserCrudTemplate\Core\obj\Debug\net6.0\Core.pdb
+H:\file\.net samples\UserApi\UserCrudTemplate\Core\obj\Debug\net6.0\Core.genruntimeconfig.cache
+H:\file\.net samples\UserApi\UserCrudTemplate\Core\obj\Debug\net6.0\ref\Core.dll

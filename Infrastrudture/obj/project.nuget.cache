@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "9OOtS9vXxz0lKDuFeAiSNw0fdM65s4B18hyM6lQwaeAloasJbeE6E/M9NhIBFs/RpFr6UGAalBFySFWbiGWplQ==",
+  "dgSpecHash": "Zj/YtXIftKsXBUsBjJeU6rBEvp0urSQWChs/mBUAb7jLFNmtDxxz+IgcubzwQUx28Ogdly4oHck3HbECWFSHEA==",
   "success": true,
-  "projectFilePath": "D:\\.net samples\\UserApi\\UserCrudTemplate\\Infrastrudture\\Infrastrudture.csproj",
+  "projectFilePath": "H:\\file\\.net samples\\UserApi\\UserCrudTemplate\\Infrastrudture\\Infrastrudture.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\amir\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
+    "C:\\Users\\amir\\.nuget\\packages\\fluentassertions\\6.7.0\\fluentassertions.6.7.0.nupkg.sha512",
     "C:\\Users\\amir\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\amir\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\amir\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
